@@ -1,8 +1,8 @@
 ﻿int num = 0, count = 0; 
-
-Console.WriteLine("Digite um numero inteiro, para que a sequência pare nele");
-num = int.Parse(Console.ReadLine());
-
+do {
+    Console.WriteLine("Digite um numero inteiro, para que a sequência pare nele");
+    num = int.Parse(Console.ReadLine());
+} while (num < 1);
 int[] fibonacci = new int[num];
 
 for (int i = 0; count < num; i++)
